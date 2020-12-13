@@ -1,0 +1,13 @@
+{
+    "require": {
+        "doctrine/orm": "^2.7",
+        "symfony/yaml": "2.*",
+        "google/cloud-bigquery": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+          "OWM\\" : "owm",
+          "App\\" : "src"
+        }
+    }
+}
