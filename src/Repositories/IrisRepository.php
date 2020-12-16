@@ -29,7 +29,9 @@ class IrisRepository extends BaseRepository{
 
     $rows = $result->rows();
 
-    
+    print_r($rows);
+
+    return [];
 
   }
 
