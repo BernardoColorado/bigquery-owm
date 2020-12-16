@@ -14,7 +14,7 @@ $irisRepository = $em->createRepository('iris');
 
 $irisFlowers = $irisRepository->findAll();
 
-print_r($irisFlowers);
+$jsonIris = json_encode($irisFlowers);
 
 
 
