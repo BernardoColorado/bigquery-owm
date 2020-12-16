@@ -7,7 +7,7 @@ use OWM\EntityManager\BaseBigQueryEntityManager;
 use Google\Cloud\BigQuery\BigQueryClient;
 use Iterator;
 
-class BigQueryEntityManager{
+class BigQueryEntityManager extends BaseBigQueryEntityManager{
 
   //single instance
   protected static $instance = null;
