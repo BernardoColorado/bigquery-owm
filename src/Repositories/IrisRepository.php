@@ -27,11 +27,17 @@ class IrisRepository extends BaseRepository{
 
     $result = $this->em->query($sql);
 
-    $rows = $result->rows();
+    $result->rows();
 
-    print_r($rows);
+    $rows=[];
 
-    return [];
+    foreach ($result->rows() as $row){
+      
+      $rows[]=$row;
+
+    }
+
+    return $rows;
 
   }
 
