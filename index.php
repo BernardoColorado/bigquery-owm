@@ -12,6 +12,8 @@ $em = BigQueryEntityManager::instanciate(['projectId'=>'inbound-density-293906']
 
 $irisRepository = $em->createRepository('iris');
 
+$iris = $irisRepository->findAll();
+
 
 
 
