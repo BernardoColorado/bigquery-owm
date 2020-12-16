@@ -2,7 +2,11 @@
 
 require_once 'vendor/autoload.php';
 
-use OWM\BigQueryEntityManager;
+use App\EntityManager\BigQueryEntityManager;
+
+$em = BigQueryEntityManager::instanciate(['projectId'=>'inbound-density-293906']);
+
+
 
 
 

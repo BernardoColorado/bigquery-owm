@@ -23,7 +23,13 @@ class IrisRepository extends BaseRepository{
 
   public function findAll():array{
 
-    return [];
+    $sql = "SELECT * FROM `sample_dwh.iris`;";
+
+    $result = $this->em->query($sql);
+
+    $rows = $result->rows();
+
+    
 
   }
 
